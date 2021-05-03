@@ -28,7 +28,7 @@ URLS (to see app health, swagger and prometheus metrics):
     
 To Run the App:
 
-download the "activedays-0.0.1-SNAPSHOT.jar" from the target folder
+download the "activedays-0.0.1-SNAPSHOT.jar" from the root folder
 and execute this cmd (eg. in gitBash) on its location
 
     java -jar activedays-0.0.1-SNAPSHOT.jar
