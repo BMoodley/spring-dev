@@ -1,0 +1,435 @@
+{
+	"info": {
+		"_postman_id": "8ef60407-f24d-42c8-9d80-e39fb491a932",
+		"name": "Active Days Points",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/product/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"product",
+						"products"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get All Products Success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/product/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"product",
+								"products"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 02 May 2021 17:12:17 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"608eaf280d375292bcf052e0\",\n        \"name\": \"smoothie\",\n        \"code\": \"123\",\n        \"points\": \"200\"\n    },\n    {\n        \"id\": \"608eb52e0d375292bcf052e4\",\n        \"name\": \"chocolate\",\n        \"code\": \"122\",\n        \"points\": \"100\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get Product By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/product/product/608eaf280d375292bcf052e0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"product",
+						"product",
+						"608eaf280d375292bcf052e0"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Product By ID Success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/product/product/608eaf280d375292bcf052e0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"product",
+								"product",
+								"608eaf280d375292bcf052e0"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 02 May 2021 17:12:04 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"608eaf280d375292bcf052e0\",\n    \"name\": \"smoothie\",\n    \"code\": \"123\",\n    \"points\": \"200\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get All Customers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/customer/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"customer",
+						"customers"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get All Customers",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/customer/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"customer",
+								"customers"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 May 2021 02:45:41 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"608eaf8a0d375292bcf052e1\",\n        \"name\": \"Jacks\",\n        \"points\": 2000\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get Customer By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/customer/customer/608eaf8a0d375292bcf052e1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"customer",
+						"customer",
+						"608eaf8a0d375292bcf052e1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Customer By ID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/customer/customer/608eaf8a0d375292bcf052e1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"customer",
+								"customer",
+								"608eaf8a0d375292bcf052e1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 May 2021 02:46:57 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"608eaf8a0d375292bcf052e1\",\n    \"name\": \"Jacks\",\n    \"points\": 2000\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Orders By Customer ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/order/customer/608eaf8a0d375292bcf052e1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"order",
+						"customer",
+						"608eaf8a0d375292bcf052e1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Orders By Customer ID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/order/customer/608eaf8a0d375292bcf052e1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"order",
+								"customer",
+								"608eaf8a0d375292bcf052e1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 May 2021 03:04:02 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"608eb4e20d375292bcf052e3\",\n    \"customer\": \"608eaf8a0d375292bcf052e1\",\n    \"products\": [\n        \"608eaf280d375292bcf052e0\",\n        \"608eb52e0d375292bcf052e4\"\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Customer has less points to buy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"customer\":\"608f6d67e82d8f8c73f9b0c4\",\r\n   \"products\":[\r\n      \"608f6dade82d8f8c73f9b0c5\",\r\n      \"608eb52e0d375292bcf052e4\"\r\n   ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/order/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"order",
+						"orders"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Customer has less points to buy",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"customer\":\"608f6d67e82d8f8c73f9b0c4\",\r\n   \"products\":[\r\n      \"608f6dade82d8f8c73f9b0c5\",\r\n      \"608eb52e0d375292bcf052e4\"\r\n   ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/order/orders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"order",
+								"orders"
+							]
+						}
+					},
+					"status": "Failed Dependency (WebDAV) (RFC 4918)",
+					"code": 424,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 May 2021 04:45:19 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "\"{message: Customer does not have enough points}\""
+				}
+			]
+		}
+	]
+}
