@@ -28,10 +28,13 @@ URLS (to see app health, swagger and prometheus metrics):
     
 To Run the App:
 
-download the "activedays-0.0.1-SNAPSHOT.jar" from the root folder
+download the project repo from the root folder
 and execute this cmd (eg. in gitBash) on its location
+(Note: We have to repackage it because the jar file size is larger than what is allowed by GitHub)
 
-    java -jar activedays-0.0.1-SNAPSHOT.jar
+    ./mvnw clean package
+     then
+    java -jar target/activedays-0.0.1-SNAPSHOT.jar
     
 
 How to use endpoints:
